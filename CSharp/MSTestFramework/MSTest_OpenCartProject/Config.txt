@@ -1,0 +1,16 @@
+Browser=chrome
+ExecutionMode=linear
+Url=https://192.168.2.151/opencart/
+UserName=opencart username
+Password=opencart password
+
+----------------------Ares DashBoard-------------
+Dashboard_url=http://zenq.affle.co:3000/
+CreateRunIDUrl=http://zenq.affle.co:3000/graph/createrunid
+AddMedhokDataUrl=http://zenq.affle.co:3000/graph/addmoduledata
+TestDetailsUrl=http://zenq.affle.co:3000/graph/addgraphdata
+token=Toen Key of Project
+ws_name=Workspace Name
+project_name=OpenCart
+project_id=Project Key 
+status=started

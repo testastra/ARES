@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Simplify.Resources</name>
+    </assembly>
+    <members>
+        <member name="T:Simplify.Resources.CustomComponentResourceManager`1">
+            <summary>
+            Class for for setting custom resource file name
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Simplify.Resources.CustomComponentResourceManager`1.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Simplify.Resources.CustomComponentResourceManager`1"/> class.
+            </summary>
+            <param name="resourceName">Name of the resource file.</param>
+        </member>
+        <member name="T:Simplify.Resources.EnumStringTableBinderExtensions">
+            <summary>
+            String table binder, converts enum to <c>KeyValuePair</c> with associated string table values
+            </summary>
+        </member>
+        <member name="M:Simplify.Resources.EnumStringTableBinderExtensions.GetAssociatedValue``1(Simplify.Resources.IResourcesStringTable,``0)">
+            <summary>
+            Get enum associated value from string table by enum type + enum element name
+            </summary>
+            <typeparam name="T">Enum</typeparam>
+            <param name="stringTable">The string table.</param>
+            <param name="enumValue">Enum value</param>
+            <returns>
+            associated value
+            </returns>
+        </member>
+        <member name="M:Simplify.Resources.EnumStringTableBinderExtensions.GetKeyValuePairList``1(Simplify.Resources.IResourcesStringTable)">
+            <summary>
+            Generates <c>KeyValuePair</c> list with ID from enum and associated name from <c>StringTable</c>
+            </summary>
+            <returns>List of <c>KeyValuePair</c> pairs</returns>
+        </member>
+        <member name="T:Simplify.Resources.IResourcesStringTable">
+            <summary>
+            Interface for getting assembly resource file string
+            </summary>
+        </member>
+        <member name="M:Simplify.Resources.IResourcesStringTable.GetString(System.String)">
+            <summary>
+            Get string table record by name
+            </summary>
+        </member>
+        <member name="P:Simplify.Resources.IResourcesStringTable.Item(System.String)">
+            <summary>
+            Get string table record by name
+            </summary>
+        </member>
+        <member name="T:Simplify.Resources.ResourcesStringTable">
+            <summary>
+            Class for getting assembly resource file string
+            </summary>
+        </member>
+        <member name="M:Simplify.Resources.ResourcesStringTable.#ctor(System.Boolean,System.String,System.String)">
+            <summary>
+            Initializes ResourcesStringTable with calling assembly string table
+            </summary>
+            <param name="callingAssembly">If true then initializes ResourcesStringTable with calling assembly string table otherwise with entry assembly string table</param>
+            <param name="resourcesFileName">Resources file name</param>
+            <param name="baseName">The root name of the resources (Assembly name will be used by default).</param>
+        </member>
+        <member name="M:Simplify.Resources.ResourcesStringTable.#ctor(System.Reflection.Assembly,System.String,System.String)">
+            <summary>
+            Initializes ResourcesStringTable with specified assembly string table
+            </summary>
+            <param name="assembly">Assembly to get string table from</param>
+            <param name="resourcesFileName">Resources file name</param>
+            <param name="baseName">The root name of the resources (Assembly name will be used by default).</param>
+        </member>
+        <member name="M:Simplify.Resources.ResourcesStringTable.GetString(System.String)">
+            <summary>
+            Get string table record by name
+            </summary>
+        </member>
+        <member name="P:Simplify.Resources.ResourcesStringTable.Item(System.String)">
+            <summary>
+            Get string table record by name
+            </summary>
+        </member>
+        <member name="T:Simplify.Resources.StringTable">
+            <summary>
+            Provides application string tables acccess
+            </summary>
+        </member>
+        <member name="P:Simplify.Resources.StringTable.Entry">
+            <summary>
+            Entry assembly string table (ProgramResources.resx)
+            </summary>
+        </member>
+    </members>
+</doc>

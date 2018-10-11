@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Simplify.Windows.Forms</name>
+    </assembly>
+    <members>
+        <member name="T:Simplify.Windows.Forms.ControlsValidator">
+            <summary>
+            Validates List of controls items for filled value or existing value
+            </summary>
+        </member>
+        <member name="M:Simplify.Windows.Forms.ControlsValidator.#ctor(System.Windows.Forms.Control,System.Windows.Forms.Control[])">
+            <summary>
+            Initialize controls validator
+            </summary>
+            <param name="resultStatusControl">Control which will be disabled or enabled after validation</param>
+            <param name="checkItems">Items to validate</param>
+        </member>
+        <member name="M:Simplify.Windows.Forms.ControlsValidator.EnableValidation">
+            <summary>
+            Elable items validation
+            </summary>
+        </member>
+        <member name="T:Simplify.Windows.Forms.Controls.NullableDateTimePicker">
+            <summary>
+            Nullable System.Windows.Forms.DateTimePicker control
+            </summary>
+        </member>
+        <member name="M:Simplify.Windows.Forms.Controls.NullableDateTimePicker.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Simplify.Windows.Forms.Controls.NullableDateTimePicker"/> class.
+            </summary>
+        </member>
+        <member name="M:Simplify.Windows.Forms.Controls.NullableDateTimePicker.SetToNullValue">
+            <summary>
+            Sets the <see cref="T:System.Windows.Forms.DateTimePicker"/> to the value of the <see cref="P:Simplify.Windows.Forms.Controls.NullableDateTimePicker.NullValue"/> property.
+            </summary>
+        </member>
+        <member name="M:Simplify.Windows.Forms.Controls.NullableDateTimePicker.SetToDateTimeValue">
+            <summary>
+            Sets the <see cref="T:System.Windows.Forms.DateTimePicker"/> to a non <see langword="null"/> value.
+            </summary>
+        </member>
+        <member name="M:Simplify.Windows.Forms.Controls.NullableDateTimePicker.OnCloseUp(System.EventArgs)">
+            <summary>
+            Raises the CloseUp event.
+            </summary>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Simplify.Windows.Forms.Controls.NullableDateTimePicker.OnKeyUp(System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.
+            </summary>
+            <param name="e">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="P:Simplify.Windows.Forms.Controls.NullableDateTimePicker.NullValue">
+            <summary>
+            Gets or sets the string value that is showing in the control as <see langword="null"/> value. 
+            </summary>
+        </member>
+        <member name="P:Simplify.Windows.Forms.Controls.NullableDateTimePicker.Value">
+            <summary>
+            Nullable <see cref="T:System.DateTime"/> value of the control
+            </summary>
+        </member>
+        <member name="T:Simplify.Windows.Forms.Controls.TopmostProgressBar">
+            <summary>
+            Implements the topmost progress bar control
+            </summary>
+        </member>
+        <member name="M:Simplify.Windows.Forms.Controls.TopmostProgressBar.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Simplify.Windows.Forms.Controls.TopmostProgressBar"/> class.
+            </summary>
+        </member>
+        <member name="M:Simplify.Windows.Forms.Controls.TopmostProgressBar.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Simplify.Windows.Forms.Controls.TopmostProgressBar.Progress">
+            <summary>
+            The ProgressBar control of the topmost progress bar
+            </summary>
+        </member>
+        <member name="T:Simplify.Windows.Forms.ListViewColumnSorter">
+            <summary>
+            System.Windows.Forms.ListView class columns sorter provider
+            </summary>
+        </member>
+        <member name="F:Simplify.Windows.Forms.ListViewColumnSorter._columnToSort">
+            <summary>
+            Specifies the column to be sorted
+            </summary>
+        </member>
+        <member name="F:Simplify.Windows.Forms.ListViewColumnSorter._orderOfSort">
+            <summary>
+            Specifies the order in which to sort (i.e. 'Ascending').
+            </summary>
+        </member>
+        <member name="M:Simplify.Windows.Forms.ListViewColumnSorter.#ctor">
+            <summary>
+            Class constructor.  Initializes various elements
+            </summary>
+        </member>
+        <member name="M:Simplify.Windows.Forms.ListViewColumnSorter.Compare(System.Object,System.Object)">
+            <summary>
+            This method is inherited from the IComparer interface.  It compares the two objects passed using a case insensitive comparison.
+            </summary>
+            <param name="x">First object to be compared</param>
+            <param name="y">Second object to be compared</param>
+            <returns>The result of the comparison. "0" if equal, negative if 'x' is less than 'y' and positive if 'x' is greater than 'y'</returns>
+        </member>
+        <member name="P:Simplify.Windows.Forms.ListViewColumnSorter.SortColumn">
+            <summary>
+            Gets or sets the number of the column to which to apply the sorting operation (Defaults to '0').
+            </summary>
+        </member>
+        <member name="P:Simplify.Windows.Forms.ListViewColumnSorter.Order">
+            <summary>
+            Gets or sets the order of sorting to apply (for example, 'Ascending' or 'Descending').
+            </summary>
+        </member>
+        <member name="T:Simplify.Windows.Forms.LocalResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Simplify.Windows.Forms.LocalResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Simplify.Windows.Forms.LocalResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Simplify.Windows.Forms.LocalResources.ErrorTextBoxDoubleValidation">
+            <summary>
+              Looks up a localized string similar to Значение в поле должно быть числовым..
+            </summary>
+        </member>
+        <member name="P:Simplify.Windows.Forms.LocalResources.ErrorTextBoxIntegerValidation">
+            <summary>
+              Looks up a localized string similar to Значение в поле должно быть числовым и не больше 10 разрядов..
+            </summary>
+        </member>
+        <member name="P:Simplify.Windows.Forms.LocalResources.ErrorTextBoxLongValidation">
+            <summary>
+              Looks up a localized string similar to Значение в поле должно быть числовым и не больше 19 разрядов..
+            </summary>
+        </member>
+        <member name="T:Simplify.Windows.Forms.MessageBox">
+            <summary>
+            Provides easy message box showing for windows desktop applications
+            </summary>
+        </member>
+        <member name="M:Simplify.Windows.Forms.MessageBox.ShowMessageBox(System.String,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxButtons)">
+            <summary>
+            Shows the message box
+            </summary>
+            <param name="text">Text of the message</param>
+            <param name="icon">Icon in message box</param>
+            <param name="buttons">Buttons in message box</param>
+        </member>
+        <member name="M:Simplify.Windows.Forms.MessageBox.ShowStMessageBox(System.String,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxButtons)">
+             <summary>
+            Shows the message box with text from string table and selected icon
+             </summary>
+             <param name="stringTableRecordName">Text of the message</param>
+             <param name="icon">Icon in message box</param>
+             <param name="buttons">Buttons in message box</param>
+        </member>
+        <member name="T:Simplify.Windows.Forms.TextBoxesValidator">
+            <summary>
+            Validates List of <see cref="T:System.Windows.Forms.TextBox"/> items for filled value
+            </summary>
+        </member>
+        <member name="M:Simplify.Windows.Forms.TextBoxesValidator.OnTextBoxNumberValidated``1(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Text-box numeric value validation event
+            </summary>
+        </member>
+        <member name="M:Simplify.Windows.Forms.TextBoxesValidator.#ctor(System.Windows.Forms.Control,System.Windows.Forms.TextBox[])">
+            <summary>
+            Initialize controls validator
+            </summary>
+            <param name="resultStatusControl">Control which will be disabled or enabled after validation</param>
+            <param name="checkItems">Items to validate</param>
+        </member>
+        <member name="M:Simplify.Windows.Forms.TextBoxesValidator.#ctor(System.Boolean,System.Windows.Forms.Control,System.Windows.Forms.TextBox[])">
+            <summary>
+            Initialize controls validator
+            </summary>
+            <param name="enableColorHightlight">Enabled text boxes color highlight in case of invalid control</param>
+            <param name="resultStatusControl">Control which will be disabled or enabled after validation</param>
+            <param name="checkItems">Items to validate</param>
+        </member>
+        <member name="M:Simplify.Windows.Forms.TextBoxesValidator.EnableValidation">
+            <summary>
+            Elable items validation
+            </summary>
+        </member>
+        <member name="M:Simplify.Windows.Forms.TextBoxesValidator.DisableValidation">
+            <summary>
+            Disable items validation
+            </summary>
+        </member>
+        <member name="P:Simplify.Windows.Forms.TextBoxesValidator.LocalStringTable">
+            <summary>
+            ApplicationHelper string table
+            </summary>
+        </member>
+    </members>
+</doc>

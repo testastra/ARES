@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="2" verbose="1" name="OpenCart Suite" annotations="JDK" parallel="classes" preserve-order="true">
+    
+	<listeners>
+	    <listener class-name="listener.TestListener"></listener>
+	</listeners>
+	
+	<test name="ProductSearch_Opencart">
+		<parameter name="browserType" value="chrome" />
+		<parameter name="browserVersion" value="69" />
+		<parameter name="OS-Name" value="windows" />
+		<parameter name="OS-Version" value="10" />
+		<parameter name="Session" value="Testing" />
+		<classes>
+			<class name="tests.ProductSearchTests_Opencart"/>
+		</classes>
+	</test>
+	
+	<test name="LoginModule_Opencart">
+		<parameter name="browserType" value="firefox" />
+		<parameter name="browserVersion" value="62" />
+		<parameter name="OS-Name" value="windows" />
+		<parameter name="OS-Version" value="10" />
+		<parameter name="Session" value="Testing" />
+		<classes>
+			<class name="tests.AccountpageTests_Opencart"/>
+		</classes>
+	</test>
+</suite>
