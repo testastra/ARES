@@ -1,7 +1,8 @@
+var apidata = require("../apiData");
 
 exports.json= {
-    "token": "",
-    "ws_name":"" ,
-    "project_name": "",
-    "status": ""
+    "token": apidata.userToken,
+    "ws_name":apidata.ws_name ,
+    "project_name": apidata.projectName,
+    "status": apidata.initialRunStatus
 };

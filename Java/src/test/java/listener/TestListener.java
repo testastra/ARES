@@ -2,7 +2,13 @@ package listener;
 
 import ZenQ_Dashboard.AresDashboard;
 import utilities.UtilityMethods;
+
+import java.io.File;
+import java.io.FileInputStream;
 import java.util.NoSuchElementException;
+import java.util.Properties;
+
+import org.json.simple.JSONObject;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
@@ -16,20 +22,17 @@ import org.testng.*;
 public class TestListener extends TestListenerAdapter implements ISuiteListener {
 
 	public static AresDashboard aresDashboard;
-	private static final String sRunID;
+	private String sRunID = null;
 	private String testStartTime = null;
 	private String testEndTime = null;
 	private static String suiteName = "";
 	public static String browserName;
+	Properties conf;
 
 	/**
 	 * Creating AresDashboard object, and calling createRunIDDetails method
 	 * which will create a unique run Id for every test execution
 	 */
-	static {
-		aresDashboard = new AresDashboard();
-		sRunID = aresDashboard.createRunIDDetails("started");
-	}
 
 	public String getRunID() {
 		return this.sRunID;
@@ -49,7 +52,7 @@ public class TestListener extends TestListenerAdapter implements ISuiteListener 
 		String testName = result.getName();
 		Exception expObject = new Exception(result.getThrowable());
 		String errormessage = expObject.toString().split("\n")[0].substring(20);
-		errormessage = errormessage.replaceAll("[\r\n]+", " ");
+		errormessage = JSONObject.escape(errormessage.replaceAll("[\r\n]+", " "));
 
 		String exceptionCategory = null;
 		Exception exceptionType = new Exception(result.getThrowable());
@@ -61,12 +64,11 @@ public class TestListener extends TestListenerAdapter implements ISuiteListener 
 			exceptionCategory = "element is not attached to the page document. Hence, Stale Element Reference Exception occured";
 		}
 		String failStackTrace = UtilityMethods.getStackTraceFromListners(result.getThrowable());
-		aresDashboard.postTestResults(getRunID(), suiteName, result.getTestContext().getName(), testName, "FAILED", "-",
-				errormessage, "-", UtilityMethods.getBrowserName(browserDetails), testStartTime, testEndTime);
-		// String runID,String suiteName, String sModuleName,String
-		// sTestCaseName,String sTestStatus,String imagePath, String errorMsg,
-		// String videoLink, String sBrowserName,String sStartTime,String
-		// testStartTime
+		
+		if(conf.getProperty("postResultsToARESdashboard").equals("true")){
+			aresDashboard.postTestResults(getRunID(), suiteName, result.getTestContext().getName(), testName, "FAILED", "-",
+					errormessage, "-", UtilityMethods.getBrowserName(browserDetails), testStartTime, testEndTime);
+		}
 
 	}
 
@@ -90,12 +92,11 @@ public class TestListener extends TestListenerAdapter implements ISuiteListener 
 		String browserDetails = (String) ((JavascriptExecutor) driver).executeScript("return navigator.userAgent;");
 		String testName = result.getName();
 		testEndTime = UtilityMethods.getDateTimeInSpecificFormat("yyyy-MM-dd HH:mm:ss.SSS");
-		aresDashboard.postTestResults(getRunID(), suiteName, result.getTestContext().getName(), testName, "PASSED", "-",
-				"-", "-", UtilityMethods.getBrowserName(browserDetails), testStartTime, testEndTime);
-		// String runID,String suiteName, String sModuleName,String
-		// sTestCaseName,String sTestStatus,String imagePath, String errorMsg,
-		// String videoLink, String sBrowserName,String sStartTime,String
-		// testStartTime
+		
+		if(conf.getProperty("postResultsToARESdashboard").equals("true")){
+			aresDashboard.postTestResults(getRunID(), suiteName, result.getTestContext().getName(), testName, "PASSED", "-",
+					"-", "-", UtilityMethods.getBrowserName(browserDetails), testStartTime, testEndTime);	
+		}
 	}
 
 	/**
@@ -129,9 +130,10 @@ public class TestListener extends TestListenerAdapter implements ISuiteListener 
 
 		System.out.println("ONSTART: " + context.getName());
 
-		// posting module data to dashboard at the test starting
-		aresDashboard.postModuleData(getRunID(), context.getName(), String.valueOf(noOfTests), "started");
-		// String runID,String sModuleName,String sTestCount,String sStatus) {
+		if(conf.getProperty("postResultsToARESdashboard").equals("true")){
+			// posting module data to dashboard at the test starting
+			aresDashboard.postModuleData(getRunID(), context.getName(), String.valueOf(noOfTests), "started");
+		}
 	}
 
 	/**
@@ -150,12 +152,19 @@ public class TestListener extends TestListenerAdapter implements ISuiteListener 
 			noOfTests++;
 		}
 		
-// 		posting module data to dashboard at the test ending
-		aresDashboard.postModuleData(getRunID(), context.getName(), String.valueOf(noOfTests), "ended");
+		if(conf.getProperty("postResultsToARESdashboard").equals("true")){
+//	 		posting module data to dashboard at the test ending
+			aresDashboard.postModuleData(getRunID(), context.getName(), String.valueOf(noOfTests), "ended");
+		}
+
 
 	}
 
 	public void onFinish(ISuite arg0) {
+		
+		if(conf.getProperty("postResultsToARESdashboard").equals("true")){
+			sRunID = aresDashboard.createRunIDDetails("ended");
+		}
 	}
 
 	/**
@@ -163,6 +172,19 @@ public class TestListener extends TestListenerAdapter implements ISuiteListener 
 	 */
 	public void onStart(ISuite iSuite) {
 
+		conf = new Properties();
+		try {
+			conf.load(new FileInputStream(
+					new File(System.getProperty("user.dir") + "\\src\\test\\resources\\Config.properties")));
+		} catch (Exception e) {
+
+		}
+		aresDashboard = new AresDashboard();
+		
+		if(conf.getProperty("postResultsToARESdashboard").equals("true")){
+			sRunID = aresDashboard.createRunIDDetails("started");
+		}
+		
 		// Suite name is to store data to dashboard
 		suiteName = iSuite.getName();
 	}

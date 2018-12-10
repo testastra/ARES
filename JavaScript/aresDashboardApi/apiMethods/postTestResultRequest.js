@@ -1,6 +1,6 @@
 let request = require("request");
 let apiKeys = require("../apiData.js");
-let addGraphDataApi = browser.baseUrl+"/graph/addgraphdata";
+let addGraphDataApi = "http://testastra.com/graph/addgraphdata";
 let fs = require("fs");
 let jsonBody = require("../jsonFiles/testBody.json");
 
@@ -64,6 +64,7 @@ let postTestResultRequest = {
             // Makes the API request
             return new Promise(function (resolve, reject) {
                 request.post(options, function (error, response, body) {
+                    console.log(response.body);
                     if (error) {
                         console.log(error);
                     }

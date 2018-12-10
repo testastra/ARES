@@ -3,7 +3,7 @@ let request = require("request");
 let apiKeys = require("../apiData.js");
 let runBody  = require("../javascriptDefaults/runBody.js");
 let moduleBody = require('../javascriptDefaults/moduleBody.js');
-let createRunIdApi = browser.baseUrl+"/graph/createrunid";
+let createRunIdApi = "http://testastra.com/graph/createrunid";
 
 let postCreateRunIdRequest = {
 

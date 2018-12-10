@@ -15,6 +15,6 @@ exports.config = {
     jasmineNodeOpts:{
         defaultTimeoutInterval: 120000,
     },
-    baseUrl: 'http://zenq.affle.co:3000'
+    baseUrl: 'http://testastra.com/dashboard'
 
 };

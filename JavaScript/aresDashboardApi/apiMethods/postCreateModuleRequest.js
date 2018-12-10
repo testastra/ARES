@@ -2,7 +2,7 @@ let q = require('q');
 let fs  = require("fs");
 let request = require("request");
 let apiKeys = require("../apiData.js");
-let addModuleDataApi =browser.baseUrl+"/graph/addmoduledata";
+let addModuleDataApi ="http://testastra.com/graph/addmoduledata";
 let testBody = require("../javascriptDefaults/testBody.js");
 let moduleBody = require("../jsonFiles/moduleBody");
 
