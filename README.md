@@ -90,11 +90,6 @@ Reach us at one of the following places!
 - Twitter: <a href="http://twitter.com/zenqinc" target="_blank">`@zenqinc`</a>
 
 ---
-__ARES DASHBOARD USERS__
-
- ![ZenQ](http://www.zenq.com/wp-content/uploads/2018/04/main-logo.png) 
-
----
 __COPYRIGHTS and LICENSE__
 
 - **[GPLv3 license](http://www.gnu.org/licenses/gpl-3.0.html)**
@@ -102,4 +97,4 @@ __COPYRIGHTS and LICENSE__
 
 > Product of _testastra_. Powered by _ZenQ_
  
- ![ZenQ](http://www.zenq.com/wp-content/uploads/2018/04/main-logo.png)
+ [![ZenQ](http://www.zenq.com/wp-content/uploads/2018/04/main-logo.png)](http://www.zenq.com/)
