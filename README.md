@@ -69,7 +69,7 @@ __DOCUMENTATION__
 
 - Wiki [link](https://github.com/testastra/ARES/wiki) 
 - User Guide [link](https://github.com/testastra/ARES/blob/master/ARES%20Dashboard%20User%20Guide.pdf)
-- ARES Dashboard webinar By *Praveen* [link](https://www.youtube.com/watch?v=KiQDBw9kAHI&feature=youtu.be)
+- ARES Dashboard webinar [link](https://www.youtube.com/watch?v=KiQDBw9kAHI&feature=youtu.be)
 
 ---
 __REPORTING ISSUE__
