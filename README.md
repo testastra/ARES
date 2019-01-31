@@ -6,7 +6,6 @@
 
 ![HitCount](http://hits.dwyl.io/testastra/ares.svg)
 ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
-![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)
 [![License](https://img.shields.io/badge/license-GPLv3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](mailto:info@testastra.com?Subject=ARES%20Dashboard)
 ![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)
@@ -31,16 +30,14 @@ __KEY FEATURES__
 ---
 __Why ARES__
 
-- It's Open Source with unlimited features
+- It is free
 - No Setup or Installation required
 - Made by QA
 
 ---
 __SAMPLE REPORT__
 
- - Sample Report [link](https://www.youtube.com/watch?v=KiQDBw9kAHI&feature=youtu.be)
- - Live Execution Video [link](https://www.youtube.com/watch?v=KiQDBw9kAHI&feature=youtu.be)
- - Features Overview Video [link](https://www.youtube.com/watch?v=KiQDBw9kAHI&feature=youtu.be)
+- Features Overview Video [link](https://www.youtube.com/watch?v=KiQDBw9kAHI&feature=youtu.be)
 
 ---
 
@@ -59,15 +56,12 @@ These APIs would carry some information about your test automation such as numbe
 ---
 __CONFIGURATION / USAGE / TUTORIALS__
 
-List of available tutorials (comming soon...)
+List of available samples
 
- - Java [link1](https://www.google.com) | [link2](https://www.google.com)
- - Javascript [link1](https://www.google.com) | [link2](https://www.google.com)
- - Protractor [link1](https://www.google.com) | [link2](https://www.google.com)
- - Appium [link1](https://www.google.com) | [link2](https://www.google.com)
- - C# [link1](https://www.google.com) | [link2](https://www.google.com)
- - Python [link1](https://www.google.com) | [link2](https://www.google.com)
- - Robotframework [link1](https://www.google.com) | [link2](https://www.google.com)
+ - Java [link](https://github.com/testastra/ARES/tree/master/Java)
+ - Javascript [link](https://github.com/testastra/ARES/tree/master/JavaScript)
+ - CSharp [link](https://github.com/testastra/ARES/tree/master/CSharp/MSTestFramework)
+ - Python (comming soon)
   
 
 ---
@@ -108,4 +102,4 @@ __COPYRIGHTS and LICENSE__
 
 > Product of _testastra_. Powered by _ZenQ_
  
- ![ZenQ](http://www.zenq.com/wp-content/uploads/2018/04/main-logo.png) 
+ ![ZenQ](http://www.zenq.com/wp-content/uploads/2018/04/main-logo.png)
