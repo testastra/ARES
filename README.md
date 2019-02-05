@@ -1,4 +1,4 @@
-<p><img src="https://i.ibb.co/kSgVFJF/ARES.png" width="300" height="150"></p>
+ <p><img src="https://i.ibb.co/kSgVFJF/ARES.png" width="300" height="150"></p>
 
 # ARES DASHBOARD
 
@@ -8,11 +8,16 @@
 ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 [![License](https://img.shields.io/badge/license-GPLv3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](mailto:info@testastra.com?Subject=ARES%20Dashboard)
-![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)
+
+_SAMPLE SCRIPT DOWNLOADS_
+
+| Java | Javascript | CSharp |
+| --- | --- | --- |
+| ![Github Releases (by Release)](https://img.shields.io/github/downloads/testastra/ares/v1.0-java/total.svg) | ![Github Releases (by Release)](https://img.shields.io/github/downloads/testastra/ares/v1.0-javascript/total.svg) | 0 |
 
 ***ARES DASHBOARD OVERVIEW***
 
-![ARES DASHBOARD](http://testastra.com/assets/images/header_center.png)
+ ![ARES DASHBOARD](http://testastra.com/assets/images/header_center.png)
 
 ---
 __KEY FEATURES__
@@ -47,7 +52,7 @@ ARES works with any test automation tool, any programming language, any test fra
 
 Here is how it works:
 
-![Image](https://preview.ibb.co/gwqj0K/test-1.png)
+ ![Image](https://preview.ibb.co/gwqj0K/test-1.png)
 
 In addition to your test automation code, you need to call 3 Restful APIs at designated places in your test automation framework. 
 
@@ -58,11 +63,10 @@ __CONFIGURATION / USAGE / TUTORIALS__
 
 List of available samples
 
- - Java [link](https://github.com/testastra/ARES/tree/master/Java)
- - Javascript [link](https://github.com/testastra/ARES/tree/master/JavaScript)
- - CSharp [link](https://github.com/testastra/ARES/tree/master/CSharp/MSTestFramework)
- - Python (comming soon)
-  
+ - Java [Tutorial](https://github.com/testastra/ARES/blob/master/Tutorials/02_ARES_Using_Selenium_Java.md) | [Download Example](https://github.com/testastra/ARES/releases/download/v1.0-java/Java.zip)
+ - Javascript [Tutorial](https://github.com/testastra/ARES/blob/master/Tutorials/03_ARES_Using_Selenium_Javascript.md) | [Download Example](https://github.com/testastra/ARES/releases/download/v1.0-javascript/JavaScript.zip)
+ - CSharp [Tutorial](https://github.com/testastra/ARES/blob/master/Tutorials/04_ARES_Using_Selenium_CSharp.md) | [Download Example](https://github.com/testastra/ARES/releases/download/v1.0-java/Java.zip)
+ - Python (comming soon..)
 
 ---
 __DOCUMENTATION__
@@ -74,8 +78,7 @@ __DOCUMENTATION__
 ---
 __REPORTING ISSUE__
 
-Please report any issues in [issue tracker](https://github.com/testastra/ARES/issues) of this
-repository using following tags
+Please report any issues in [issue tracker](https://github.com/testastra/ARES/issues) using following tags
  - [Issue] Something isn't working
  - [enhancement] New feature or request
 
@@ -86,7 +89,7 @@ Reach us at one of the following places!
 
 - Website: <a href="http://testastra.com" target="_blank">`testastra.com`</a>
 - Email <a href="mailto:info@testastra.com?Subject=ARES%20Dashboard" target="_blank">`info@testastra.com`</a>
-- LinkedIn: <a href="https://www.linkedin.com/company/zenq" target="_blank">`ZenQ`</a>
+- LinkedIn: <a href="https://www.linkedin.com/company/testastraares" target="_blank">`Test Astra's ARES`</a>
 - Twitter: <a href="http://twitter.com/zenqinc" target="_blank">`@zenqinc`</a>
 
 ---
