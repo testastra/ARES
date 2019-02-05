@@ -63,16 +63,16 @@ __CONFIGURATION / USAGE / TUTORIALS__
 
 List of available samples
 
- - Java [Tutorial](https://github.com/testastra/ARES/blob/master/Tutorials/02_ARES_Using_Selenium_Java.md) | [Download Example](https://github.com/testastra/ARES/releases/download/v1.0-java/Java.zip)
- - Javascript [Tutorial](https://github.com/testastra/ARES/blob/master/Tutorials/03_ARES_Using_Selenium_Javascript.md) | [Download Example](https://github.com/testastra/ARES/releases/download/v1.0-javascript/JavaScript.zip)
- - CSharp [Tutorial](https://github.com/testastra/ARES/blob/master/Tutorials/04_ARES_Using_Selenium_CSharp.md) | [Download Example](https://github.com/testastra/ARES/releases/download/v1.0-java/Java.zip)
+ - Java [Tutorial](/Tutorials/02_ARES_Using_Selenium_Java.md) | [Download Example](https://github.com/testastra/ARES/releases/download/v1.0-java/Java.zip)
+ - Javascript [Tutorial](/Tutorials/03_ARES_Using_Selenium_Javascript.md) | [Download Example](https://github.com/testastra/ARES/releases/download/v1.0-javascript/JavaScript.zip)
+ - CSharp [Tutorial](/Tutorials/04_ARES_Using_Selenium_CSharp.md) | [Download Example](https://github.com/testastra/ARES/releases/download/v1.0-csharp/Csharp.zip)
  - Python (comming soon..)
 
 ---
 __DOCUMENTATION__
 
 - Wiki [link](https://github.com/testastra/ARES/wiki) 
-- User Guide [link](https://github.com/testastra/ARES/blob/master/ARES%20Dashboard%20User%20Guide.pdf)
+- User Guide [link](/ARES%20Dashboard%20User%20Guide.pdf)
 - ARES Dashboard webinar [link](https://www.youtube.com/watch?v=KiQDBw9kAHI&feature=youtu.be)
 
 ---
