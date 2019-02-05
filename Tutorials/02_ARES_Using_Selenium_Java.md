@@ -4,7 +4,7 @@ In this tutorial will discuss about usage of ARES in Selenium using Java
 
 > Prerequisite: 
 > - Basic knowledge on Java, Selenium, TestNG
-> - Created project in ARES Dashboard ( create project in ARES is explained in [01_Introduction.md](https://github.com/testastra/ARES/blob/master/Tutorials/01_Introduction.md) )
+> - Created project in ARES Dashboard ( create project in ARES is explained in [01_Introduction.md](/Tutorials/01_Introduction.md) )
 
 __SETUP PROJECT__
 
