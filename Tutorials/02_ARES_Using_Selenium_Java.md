@@ -25,16 +25,17 @@ In this section will discuss about set-up project for ARES dashboard usage
  
     > - Copy _ZenQ_Dashboard_ folder (Folder: Java > src > test > java > ZenQ_Dashboard)
 
-    ![COPY FILES](Assets/copy_files.gif)
+    ![COPY FILES](https://i.ibb.co/SP9DNjT/copy-files.gif)
 
-    > Note: Fix imports of project if any (like adding standalone, testNG jar etc.,)
+    > Note: Fix imports errors if any (like adding standalone, testNG etc.,)
 
  - Step 4: Update _Config.properties_ with project info (copied in _Step 1_ )
     > Project Name, Project Key, User Key
     
-    ![COPY FILES](Assets/update_config_properties.gif)
+    ![COPY FILES](https://i.ibb.co/f1NXGrf/update-config-properties.gif)
 
- - Step 5: Write custom test case and include few additional steps of ARES in test case as follows
+ - Step 5: Write custom test case using TestNG
+   > Our customized TestNG listners (files copied from Sample ARES scripts) will make respective call's for ARES Dashboard
 
  - Step 6: Execute test cases
 
