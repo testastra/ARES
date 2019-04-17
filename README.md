@@ -12,7 +12,7 @@
 _SAMPLE SCRIPT DOWNLOADS_
 
 | Java | Javascript | CSharp | RF |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | ![Github Releases (by Release)](https://img.shields.io/github/downloads/testastra/ares/v1.0-java/total.svg) | ![Github Releases (by Release)](https://img.shields.io/github/downloads/testastra/ares/v1.0-javascript/total.svg) | 0 | ![Github Releases (by Release)](https://img.shields.io/github/downloads/testastra/ares/v1.0-rf/total.svg) |
 
 ***ARES DASHBOARD OVERVIEW***
@@ -52,7 +52,7 @@ ARES works with any test automation tool, any programming language, any test fra
 
 Here is how it works:
 
-<p align="center"><img src="https://preview.ibb.co/gwqj0K/test-1.png" width="400" height="300"></p>
+<p align="center"><img src="https://preview.ibb.co/gwqj0K/test-1.png" ></p>
 
 In addition to your test automation code, you need to call 3 Restful APIs at designated places in your test automation framework. 
 
@@ -101,4 +101,3 @@ __COPYRIGHTS and LICENSE__
 > Product of _testastra_. Powered by _ZenQ_
  
  [![ZenQ](http://www.zenq.com/wp-content/uploads/2018/04/main-logo.png)](http://www.zenq.com/)
- 
