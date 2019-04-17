@@ -1,4 +1,4 @@
- <p><img src="https://i.ibb.co/kSgVFJF/ARES.png" width="300" height="150"></p>
+ <p align="center"><img src="https://i.ibb.co/kSgVFJF/ARES.png" width="300" height="150"></p>
 
 # ARES DASHBOARD
 
@@ -11,9 +11,9 @@
 
 _SAMPLE SCRIPT DOWNLOADS_
 
-| Java | Javascript | CSharp |
+| Java | Javascript | CSharp | RF |
 | --- | --- | --- |
-| ![Github Releases (by Release)](https://img.shields.io/github/downloads/testastra/ares/v1.0-java/total.svg) | ![Github Releases (by Release)](https://img.shields.io/github/downloads/testastra/ares/v1.0-javascript/total.svg) | 0 |
+| ![Github Releases (by Release)](https://img.shields.io/github/downloads/testastra/ares/v1.0-java/total.svg) | ![Github Releases (by Release)](https://img.shields.io/github/downloads/testastra/ares/v1.0-javascript/total.svg) | 0 | ![Github Releases (by Release)](https://img.shields.io/github/downloads/testastra/ares/v1.0-rf/total.svg) |
 
 ***ARES DASHBOARD OVERVIEW***
 
@@ -52,7 +52,7 @@ ARES works with any test automation tool, any programming language, any test fra
 
 Here is how it works:
 
- ![Image](https://preview.ibb.co/gwqj0K/test-1.png)
+<p align="center"><img src="https://preview.ibb.co/gwqj0K/test-1.png" width="400" height="300"></p>
 
 In addition to your test automation code, you need to call 3 Restful APIs at designated places in your test automation framework. 
 
@@ -66,7 +66,7 @@ List of available samples
  - Java [Tutorial](/Tutorials/02_ARES_Using_Selenium_Java.md) | [Download Example](https://github.com/testastra/ARES/releases/download/v1.0-java/Java.zip)
  - Javascript [Tutorial](/Tutorials/03_ARES_Using_Selenium_Javascript.md) | [Download Example](https://github.com/testastra/ARES/releases/download/v1.0-javascript/JavaScript.zip)
  - CSharp [Tutorial](/Tutorials/04_ARES_Using_Selenium_CSharp.md) | [Download Example](https://github.com/testastra/ARES/releases/download/v1.0-csharp/Csharp.zip)
- - Python (comming soon..)
+ - Robotframework [Tutorial](/Tutorials/05_ARES_Using_Robotframework.md) | [Download Example](https://github.com/testastra/ARES/releases/download/v1.0-rf/rf.zip)
 
 ---
 __DOCUMENTATION__
@@ -101,3 +101,4 @@ __COPYRIGHTS and LICENSE__
 > Product of _testastra_. Powered by _ZenQ_
  
  [![ZenQ](http://www.zenq.com/wp-content/uploads/2018/04/main-logo.png)](http://www.zenq.com/)
+ 
